@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GetWash</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-   
+<body class="bg-white text-slate-700">
+
+    <!-- Header -->
+    <header class="border-b border-gray-100">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-3xl font-bold text-blue-700">GetWash</a>
+            <div class="hidden md:flex items-center gap-8 text-sm text-gray-600">
+                <a href="#">Как использовать</a>
+                <a href="#">Партнерам</a>
+                <a href="#">Скачать</a>
+                <a href="#">Отзывы</a>
+            </div>
+            <a href="#" class="hidden md:block border-2 border-gray-200 text-sm px-6 py-3 rounded-md hover:bg-gray-50">Получить доступ</a>
+            <button class="md:hidden text-3xl">
+                <img src="./images/menu.png" alt="menu">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <!-- Left Side: Text and Button -->
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-extrabold text-blue-950 mb-6 leading-tight">
+                    Поиск ближайшей свободной автомойки и бронирование на удобное время.
+                    <!-- Arrow and bubbles are part of the main image, but could be added here if separated -->
+                    <span class="inline-block transform rotate-[-30deg] text-blue-700 ml-1">→</span>
+                </h1>
+                <p class="text-lg text-gray-500 mb-12 max-w-xl mx-auto md:mx-0">
+                    Мы поможем сохранить ваше время для более интересных занятий, чем стоять в очереди.
+                </p>
+                <a href="#" class="bg-blue-600 text-white font-medium text-lg px-10 py-5 rounded-md hover:bg-blue-700 shadow-md">Получить доступ</a>
+            </div>
+            <div class="hidden md:block">
+                <img src="./images/iPhone 12 Pro Mockup 1.png" alt="GetWash App Interface - Desktop" class="w-full">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Mobile-Only Image Area (as requested) -->
+    <section class="block md:hidden border-t border-gray-100 mt-16 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <img src="./images/Mask Group.png" alt="GetWash App Interface - Mobile" class="mx-auto max-w-sm rounded-lg shadow-xl">
+        </div>
+    </section>
+    
+
 </body>
 </html>
